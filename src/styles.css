@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+#footer {
+    clear: both;
+    position: bottom;
+    height: 40px;
+    margin-top: -40px;
+}
