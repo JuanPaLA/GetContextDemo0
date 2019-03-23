@@ -1,0 +1,24 @@
+<div id="contenedor-main">
+    <div id="content-main">
+      <p><a routerLink="/dashboard">Volver a dashboard</a></p>
+      
+      Costos
+
+      {{ fiesta }}
+
+      <ng-container *ngFor = "let n of fakeArray">
+          <div>
+                costos
+                {{n.name}}
+                {{n.id}}
+               <app-indicador name={{n.name}} id={{n.id}}></app-indicador>
+          </div>
+
+</ng-container>
+    
+  
+
+    <hr>
+
+    </div>
+</div>
