@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { stringify } from '@angular/core/src/render3/util';
+import { Grafico } from './grafico.model';
 
 @Component({
   selector: 'app-graf1',
@@ -8,17 +8,16 @@ import { stringify } from '@angular/core/src/render3/util';
 })
 export class Graf1Component implements OnInit {
 
-  grafico: any;
-  @Input('tipo') variable: string;
+  //Con el decorador Input indicamos que el objeto "grafico" obtendrá los valores
+  //de sus respectivas propiedades del objeto que pasemos en "graficoInput".
+  //Este hará el llamado desde el componente padre, que pasará a su vez una instancia
+  //de tipo Grafico para poblar las propiedades del componente hijo. 
+  
+  @Input('graficoInput') grafico: Grafico;
   constructor() { }
 
   ngOnInit() {
-    this.grafico = {
-      tipo: this.variable,
-      descripcion: 'medir la verdad de la milanesa',
-      contexto: 'se lo utiliza sobretodo para comparacíón de variables numéricas',
-      variables: 3
-    }
+
   }
 
 }

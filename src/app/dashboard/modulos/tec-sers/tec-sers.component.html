@@ -14,7 +14,16 @@
 
     <h2>Prueba de paso de datos</h2>
 
-    <app-graf1 tipo="PRUEBA"></app-graf1>
+    <!--
+        AQUÍ, DENTRO DEL SELECTOR DEL COMPONENTE HIJO EN EL HTML DEL COMPONENTE
+        PADRE, SE MANDAN LOS DATOS QUE POBLARÁN LAS PROPIEDADES DEL COMPONENTE
+        HIJO.
+        - Con los corchetes le decimos a angular que lo que pasamos es un objeto. 
+        - En corchetes va el nombre del objeto del componente hijo.
+        - En comillas el nombre del objeto dle componente padre que tiene los datos
+        para el objeto del componente hijo. 
+    -->
+    <app-graf1 [graficoInput]="graficoParent"></app-graf1>
 
 
 </div>
