@@ -13,6 +13,10 @@ import { CoBarChartComponent } from './dashboard/modulos/costos-operativos/co-ba
 import { CoLineChartComponent } from './dashboard/modulos/costos-operativos/co-line-chart/co-line-chart.component';
 import { NavMenuComponent } from './dashboard/nav-menu/nav-menu.component';
 import { CoRadarChartComponent } from './dashboard/modulos/costos-operativos/co-radar-chart/co-radar-chart.component';
+import { FooterComponent } from './dashboard/footer/footer.component';
+import { TecSersComponent } from './dashboard/modulos/tec-sers/tec-sers.component';
+import { Graf1Component } from './dashboard/modulos/tec-sers/graf1/graf1.component';
+
 
 
 @NgModule({
@@ -25,7 +29,11 @@ import { CoRadarChartComponent } from './dashboard/modulos/costos-operativos/co-
     CoBarChartComponent,
     CoLineChartComponent,
     NavMenuComponent,
-    CoRadarChartComponent
+    CoRadarChartComponent,
+    FooterComponent,
+    TecSersComponent,
+    Graf1Component,
+
   ],
   imports: [
     BrowserModule,
